@@ -1,0 +1,98 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    background-image:url("../images/slider1.jpg");
+}
+
+h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    background-color: aqua;
+    font-weight: bold;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 0.94;
+}
+
+paddtop20{
+    padding-top:20px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    height: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#ulMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #004074;
+    border: 1px solid #000;
+}
+
+    #ulMenu li {
+        display: inline;
+        font-size: 2em;
+        color: black;
+        padding-right: 40px;
+    }
+
+        #ulMenu li a {
+            color: #fff;
+        }
+
+figure a img {
+    width: 388px;
+    height: 330px;
+    border: 2px solid #000;
+}
+
+#logotitle {
+    padding: 0px;
+    margin: 0px;
+    display: flex !important;
+    width: 735px;
+}
+input[type=text] {
+    background-color: aqua;
+    width: 340px;
+    height: 30px;
+}
+
+input[type=submit],[type=reset] {
+    background-color: aqua;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    height: 45px;
+    width: 169px;
+}
+
+submit {
+    height: 41px;
+    width: 141px;
+}
+
+.customerfrm {
+    list-style-type: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+    

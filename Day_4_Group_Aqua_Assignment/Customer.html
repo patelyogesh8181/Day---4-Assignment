@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Yogesh Travel agency | Contact</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .copyright:after {
+            content: ' \00A9';
+        }
+    </style>
+
+    <script>
+        function AddData() {
+            var username = document.getElementById('txtName').value;
+            var address = document.getElementById('txtAddress').value;
+            var city = document.getElementById('txtCity').value;
+            var province = document.getElementById('txtProvince').value;
+            var postalcode = document.getElementById('txtPostalCode').value;
+            var phone = document.getElementById('txtPhone').value;
+            var email = document.getElementById('txtEmail').value;
+            
+            var str = 'Name: ' + username + '\n' + 'Address: ' + address + '\n' + 'City: ' + city + '\n' + 'Province: ' + province + '\n' + 'Postal Code: ' + postalcode + '\n' + 'Phone: ' + phone + '\n' + 'Email: ' +email;
+
+            alert(str);
+
+            //document.getElementById('lblResult').innerHTML = str;
+
+            var test = confirm('Do you want to submit the form?');
+            if (test == 1) {
+                alert('Insert section');
+            }
+            else {
+                ClearData();
+            }
+        }
+        function ClearData() {
+            document.getElementById('txtName').value = '';
+            document.getElementById('txtAddress').value = '';
+            document.getElementById('txtCity').value = '';
+            document.getElementById('txtProvince').value = '';
+            document.getElementById('txtPostalCode').value = '';
+            document.getElementById('txtPhone').value = '';
+            document.getElementById('txtEmail').value = '';
+        }
+
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Register</h1>
+
+        <ul class="customerfrm">
+            <li>
+                <label>
+                    <strong>Name</strong><br>
+                    <input id="txtName" name="UserName" type="text">
+                </label>
+            </li>
+            <li>
+                <label>
+                    <strong>Address</strong><br>
+                    <input id="txtAddress" name="Address" type="text">
+                </label>
+            </li>
+            <li>
+                <label>
+                    City<br>
+                    <input id="txtCity" name="City" type="text">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Province<br>
+                    <input id="txtProvince" name="Province" type="text">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Postal Code<br>
+                    <input id="txtPostalCode" name="Province" type="text">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Telephone<br>
+                    <input id="txtPhone" name="Phone" type="text">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Email Address<br>
+                    <input id="txtEmail" name="Email" class="edge-autofilled" type="text">
+                </label>
+            </li>
+            <li style="padding-top:20px;">
+                <input type="submit" value="Submit" onclick="AddData()">
+                <!--<input type="submit" value="Submit" oncick="AddData()" onClick="return confirm('Do you want to submit the form?')">-->
+                <input type="reset" value="Reset" onclick="ClearData()">
+
+                <label id="lblResult"></label>
+            </li>
+        </ul>
+
+
+    </center>
+
+    <footer>
+        <p>
+            <span class="copyright"></span> Copyright 2019 All rights reserved | This is made with by <a href="index.html" target="_blank">Yogesh Travel agency</a>
+        </p>
+    </footer>
+
+</body>
